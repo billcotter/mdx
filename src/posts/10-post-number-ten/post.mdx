@@ -1,0 +1,91 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2021-03-12
+author: bill cotter
+category: gatsby
+readTime: 34
+---
+
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import Layout from "../../components/Layout"
+import {Counter,LikeButton} from '../../components/Complete'
+
+
+
+
+
+### my first mdx file
+
+**Thundercats taiyaki** poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+</div>
+
+  
+
+ <div className="nice-text">
+
+   <h3>nice text</h3>
+    
+    <FiInfo className="nice-text-icon"></FiInfo>
+   
+       
+   Thundercats taiyaki poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+
+    
+</div>
+
+
+
+<h2>React Components</h2>
+<Counter />
+
+<div className="code">
+
+```js
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+
+```
+</div>
+
+<LikeButton />
+
+
+<Link to="/posts" className="btn center-btn">
+    all posts
+ </Link>
+
+
+
+
+
+
