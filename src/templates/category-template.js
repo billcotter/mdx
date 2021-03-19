@@ -6,7 +6,9 @@ import { graphql } from "gatsby"
 // ...GatsbyImageSharpFluid
 
 const CategoryTemplate = props => {
-  const {data:{categories:{nodes: posts},
+  const {
+    data:{
+      categories:{nodes: posts},
 },
 } = props
   return <Layout>
@@ -17,7 +19,7 @@ const CategoryTemplate = props => {
 
 export const query = graphql `
 query GetCategories($category: String) {
-  catagories: allMdx(sort: {fields: frontmatter___date, order: DESC}
+  categories: allMdx(sort: {fields: frontmatter___date, order: DESC}
     filter: {frontmatter: {category: {eq: $category}}}
     ) {
     nodes {
