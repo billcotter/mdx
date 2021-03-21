@@ -2,10 +2,19 @@ import React from "react"
 import styled from "styled-components"
 import About from "./About"
 import Instagram from "./Instagram"
+import Youtube from "./Youtube"
 import Recent from "./Recent"
 import BannerCategories from "./BannerCategories"
 const Banner = () => {
-  return <Wrapper>banner component</Wrapper>
+  return (
+  <Wrapper>
+    <About />
+    <Instagram />
+    <Youtube />
+    <Recent />
+    <BannerCategories />
+  </Wrapper>
+  ) 
 }
 
 const Wrapper = styled.aside`

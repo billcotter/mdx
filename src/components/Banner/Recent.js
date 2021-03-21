@@ -6,7 +6,9 @@ import Image from 'gatsby-image'
 import Title from './Title'
 
 const Recent = () => {
-  return <Wrapper>Banner Recent</Wrapper>
+  return (
+  <Wrapper>Banner Recent</Wrapper>
+  )
 }
 
 const Wrapper = styled.div`

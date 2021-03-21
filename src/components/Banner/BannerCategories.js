@@ -3,7 +3,9 @@ import styled from "styled-components"
 import Categories from "../Categories"
 import Title from "./Title"
 const BannerCategories = () => {
-  return <Wrapper>banner categories</Wrapper>
+  return (
+  <Wrapper>banner categories</Wrapper>
+  )
 }
 const Wrapper = styled.div`
   .category {
