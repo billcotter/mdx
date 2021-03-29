@@ -11,6 +11,8 @@ module.exports = {
     // `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-remark-images`,
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,11 +36,11 @@ module.exports = {
         gatsbyRemarkPlugins: [{ resolve: "gatsby-remark-images" }],
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `8556131572`,
-      },
-    },
+    //*{
+     // resolve: `gatsby-source-instagram`,
+      //options: {
+        //username: `8556131572`,
+      //},
+    //},
   ],
 }

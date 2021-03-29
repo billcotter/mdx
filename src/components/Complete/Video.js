@@ -2,7 +2,13 @@ import React from "react"
 import video from "../../assets/connect.mp4"
 import styled from "styled-components"
 export const RegVideo = () => {
-  return <RegVideoWrapper>regular video</RegVideoWrapper>
+  return (
+  <RegVideoWrapper>
+    <video controls autoPlay muted loop>
+      <source src={video} type='video/mp4' />
+    </video>
+  </RegVideoWrapper>
+  )
 }
 
 export const Video = ({ src, title, ...props }) => {
@@ -22,6 +28,10 @@ export const Video = ({ src, title, ...props }) => {
     </IframeVideoWrapper>
   )
 }
+
+
+
+
 
 const RegVideoWrapper = styled.div`
   width: 90vw;
@@ -63,4 +73,11 @@ const IframeVideoWrapper = styled.div`
 Video.defaultProps = {
   src: "https://www.youtube.com/embed/-8ORfgUa8ow",
   title: "the best html css tutorial ever !",
+
 }
+
+
+
+
+
+ 

@@ -18,11 +18,11 @@ const SocialLinks = ({ styleClass }) => {
           <FaTwitterSquare className="social-icon twitter-icon"></FaTwitterSquare>
         </a>
       </li>
-      <li>
+      {/*<li>
       <a href="https://www.instagram.com/billcotter/">
           <FaInstagramSquare className="social-icon instagram-icon"></FaInstagramSquare>
         </a>
-     </li>
+      </li>*/}
      <li>
        <a href="https://youtube.com/billjcotter">
           <FaYoutubeSquare className="social-icon youtube-icon"></FaYoutubeSquare>

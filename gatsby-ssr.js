@@ -1,3 +1,10 @@
+import "./src/css/main.css"
+import {wrapMDX} from './root-mdx'
+
+export const wrapRootElement = wrapMDX
+
+
+
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *

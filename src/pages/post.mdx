@@ -1,27 +1,29 @@
 import { Link } from 'gatsby'
 import { FiInfo } from 'react-icons/fi'
 import Layout from "../components/Layout"
-import {Counter,LikeButton} from '../components/Complete'
+import {Counter,LikeButton,RegVideo,Video} from '../components/Complete'
 
 
 
 <section className="mdx-page">
 
-### my first mdx file
 
-**Thundercats taiyaki** poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+  ### my first mdx file
 
-<div className="code">
 
-```js
-const firstName = 'john'
-const lastName = 'smith'
-```
-</div>
+  **Thundercats taiyaki** poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.  
+
+  <div className="code">
+
+  ```js
+  const firstName = 'bill'  
+  const lastName = 'cotter'
+  ```
+  </div>
 
   
 
- <div className="nice-text">
+  <div className="nice-text">
 
    <h3>nice text</h3>
     
@@ -31,20 +33,20 @@ const lastName = 'smith'
    Thundercats taiyaki poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
 
     
-</div>
+  </div>
 
 
 
-<h2>React Components</h2>
-<Counter />
+  <h2>React Components</h2>
+  <Counter /> 
 
-<div className="code">
+  <div className="code-tab">
 
-```js
-import React from "react"
-import styled from "styled-components"
-import { AiOutlineLike } from "react-icons/ai"
-const LikeButton = () => {
+  ```js
+  import React from "react"
+  import styled from "styled-components"
+  import { AiOutlineLike } from "react-icons/ai"
+  const LikeButton = () => {
   const [value, setValue] = React.useState(0)
   return (
     <Wrapper>
@@ -61,20 +63,101 @@ const LikeButton = () => {
       <span>+{value}</span>
     </Wrapper>
   )
+  }
+
+  ```
+  </div>
+
+  <LikeButton />
+
+  <h2>video components</h2>
+    <RegVideo />
+  <Video />
+  <h2>regular heading</h2>
+  <h2 title="true">title heading</h2>
+  <h4>inline code</h4>
+
+  `console.log('hello there')`
+
+  <h4>blockquote elements</h4>
+
+  <blockquote display="default">
+    Thundercats taiyaki poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+  </blockquote>
+
+   <blockquote display="info">
+    Thundercats taiyaki poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+  </blockquote>
+
+   <blockquote display="warning">
+    Thundercats taiyaki poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+  </blockquote>
+
+  <blockquote>
+    Thundercats taiyaki poke single-origin coffee fashion axe trust fund. Vinyl gastropub synth ugh. Irony artisan affogato, literally echo park actually poutine distillery man bun brooklyn sustainable before they sold out cardigan.
+  </blockquote>
+
+  #### Javascript
+
+```js
+// comments
+const name = "bill"
+const channel = "code wrangler"
+
+function featuredProducts(data) {
+  return data.filter(item => {
+    return item.featured === true
+  })
 }
-
+featuredProducts()
 ```
-</div>
 
-<LikeButton />
+#### JSX
 
+```jsx
+import React from "react"
 
-<Link to="/posts" className="btn center-btn">
-    all posts
- </Link>
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
 
+#### HTML
+
+```html
+<h1>hello world</h1>
+<p class="random">random text</p>
+<section class="contact">
+  <div class="title">
+    <h1>contact us</h1>
+  </div>
 </section>
+```
+
+#### CSS
+
+```css
+max-width: 500px;
+border-radius: var(--radius);
+padding: 1rem 1.5rem;
+background: var(--clr-grey-10);
+text-align: center;
+```
 
 
 
+  <Link to="/posts" className="btn center-btn">
+    all posts
+  </Link>
+  </section>
 
