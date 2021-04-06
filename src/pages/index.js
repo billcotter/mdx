@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import Posts from "../components/Posts"
 import { graphql } from "gatsby"
+import SEO from '../components/SEO'
 //import { RegVideo } from '../components/Complete'
 //import { Video} from '../components/Complete'
 //...GatsbyImageSharpFluid
@@ -11,6 +12,7 @@ const IndexPage = ({ data }) => {
   const {allMdx: {nodes:posts}} =data;
   return (
   <Layout>
+    <SEO title="Home" />
     <Hero showPerson /> 
     
     <Posts posts={posts} title="recently published " />

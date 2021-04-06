@@ -25,8 +25,7 @@ const About = () => {
   <Wrapper>
     <Title title="about me" />
     <Image fixed={data.person.childImageSharp.fixed} className="img" />
-    <p>my first mdx file Thundercats taiyaki poke single-origin coffee fashion axe trust fund.
-    Vinyl gastropub synth ugh. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     <SocialLinks styleClass="banner-icons" />
 
   </Wrapper>
